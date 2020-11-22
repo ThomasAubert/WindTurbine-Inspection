@@ -12,25 +12,30 @@ $lightningStrike = 'Lightning Strike';
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Header -->
 <?php include('./templates/header.php'); ?>
 
+<!-- Main -->
 <main class="bg">
+  <!-- Only Section -->
   <section>
     <div class="container mx-auto">
+      <!-- Section Title -->
+      <h2 class="text-dark text-center font-weight-bold my-5 shadow rounded-lg">Wind Turbine Inspection Items</h2>
 
-      <h2 class="text-dark text-center font-weight-bold text-monospace my-5 shadow rounded-lg">Wind Turbine Inspection Items</h2>
-
+      <!-- Grid Container -->
       <div class="row mx-auto">
 
+        <!-- PHP ARRAY ITERATION -->
         <?php
-        $inspectedItems = range(1, 100);
+        $inspectedItems = range(1, 100); // without AJAX
         foreach ($inspectedItems as $item) {
           //  multiples of 3 && 5
           if ($item % 15 == 0) { ?>
             <div class=" col-md-4 col-lg-3">
               <div class="card bg-danger mb-4 border-0 shadow-sm" style="height: 120px">
                 <div class="card-body text-center">
-                  <p class="card-title font-weight-bold text-uppercase">
+                  <p class="card-title font-weight-bold text-white text-uppercase">
                     <?php echo "$coatingDamage and $lightningStrike"; ?>
                   </p>
                 </div>
@@ -54,9 +59,9 @@ $lightningStrike = 'Lightning Strike';
             // multiples of 5
           } elseif ($item % 5 == 0) { ?>
             <div class=" col-md-4 col-lg-3">
-              <div class="card bg-warning mb-4 border-0 shadow-sm" style="height: 100px">
+              <div class="card bg-warning mb-4 border-0 shadow-sm align-text-bottom" style="height: 100px">
                 <div class="card-body text-center">
-                  <p class="card-title font-weight-bold text-uppercase">
+                  <p class="card-title font-weight-bold align-text-bottom text-uppercase">
                     <?php echo "$lightningStrike"; ?>
                   </p>
                 </div>
@@ -75,6 +80,7 @@ $lightningStrike = 'Lightning Strike';
         <?php
           }
         } ?>
+        <!-- End of PHP Iteration -->
 
       </div> <!-- end of grid -->
 

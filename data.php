@@ -5,5 +5,5 @@
 
 $inspectedItems = range(1, 100);
 
-// return for ajax
+// JSON return for ajax
 echo json_encode($inspectedItems);
