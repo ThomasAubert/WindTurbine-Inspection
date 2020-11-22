@@ -89,6 +89,7 @@ $lightningStrike = 'Lightning Strike';
   </section>
 </main>
 
+<!-- Footer -->
 <?php include('./templates/footer.php'); ?>
 </body>
 
