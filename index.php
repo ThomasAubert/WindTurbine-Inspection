@@ -21,7 +21,7 @@ $lightningStrike = 'Lightning Strike';
   <section>
     <div class="container mx-auto">
       <!-- Section Title -->
-      <h2 class="text-dark text-center font-weight-bold my-5 shadow rounded-lg">Wind Turbine Inspection Items</h2>
+      <h1 class="text-dark text-center font-weight-bold my-5 shadow rounded-lg py-1">Wind Turbine Inspection Items</h1>
 
       <!-- Grid Container -->
       <div class="row mx-auto">
