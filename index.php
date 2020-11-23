@@ -1,6 +1,6 @@
 <?php
 
-// wind turbine items using ajax
+// wind turbine items using json file from data.php
 // $inspectedItems = json_decode(stripslashes($_POST['$inspectedItems']));
 
 // iteration through the items
@@ -91,6 +91,8 @@ $lightningStrike = 'Lightning Strike';
 
 <!-- Footer -->
 <?php include('./templates/footer.php'); ?>
+
+
 </body>
 
 </html>
